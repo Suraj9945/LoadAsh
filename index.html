@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>title</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.12.0/lodash.js"></script>
+  </head>
+  <body>
+  </body>
+
+</html>
+
+    <script>
+        var arr = [{Id:1, name:"Michael"},
+        {Id:2, name:"Mix"},
+        {Id:3, name:"Mark"},
+        {Id:4, name:"Marta"},
+        {Id:5, name:"Anna"}
+        ];
+        var desiredId = 5
+        var result = _.find(arr, { Id: desiredId });
+        document.write(result.name + "<br><br>");
+        var chunk = _.partition([1, 2, 3, 4], n => n % 2);
+        document.write(chunk)
+    </script>
+
