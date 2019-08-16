@@ -6,21 +6,26 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.12.0/lodash.js"></script>
   </head>
   <body>
-  </body>
+    </body>
 
 </html>
 
     <script>
-        var arr = [{Id:1, name:"Michael"},
-        {Id:2, name:"Mix"},
-        {Id:3, name:"Mark"},
-        {Id:4, name:"Marta"},
-        {Id:5, name:"Anna"}
-        ];
-        var desiredId = 5
-        var result = _.find(arr, { Id: desiredId });
-        document.write(result.name + "<br><br>");
-        var chunk = _.partition([1, 2, 3, 4], n => n % 2);
-        document.write(chunk)
+        // var arr = [{Id:1, name:"Michael"},
+        // {Id:2, name:"Mix"},
+        // {Id:3, name:"Mark"},
+        // {Id:4, name:"Marta"},
+        // {Id:5, name:"Anna"}
+        // ];
+        // var desiredId = 5
+        // var result = _.find(arr, { Id: desiredId });
+        // document.write(result.name + "<br><br>");
+        // var chunk = _.partition([1, 2, 3, 4], n => n % 2);
+        // document.write(chunk)
+        var a = _.sortBy([{ name: 'moss' }, { name: 'jen' }, { name: 'roy' }], 'name')
+        console.log(a)
+        var x = a.forEach(function(r){  
+            alert(r.name)            
+        });
     </script>
 
